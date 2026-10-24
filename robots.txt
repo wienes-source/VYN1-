@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vyn1.com/sitemap.xml
