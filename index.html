@@ -29,6 +29,7 @@
     @media(max-width:520px){.hero h1{font-size:3.3rem}.hero-desc{font-size:1.04rem}.hero-actions{flex-direction:column;align-items:stretch}.service-grid{grid-template-columns:1fr}.service{min-height:initial;padding:26px}.service-icon{margin-bottom:18px}.display-card h2{font-size:2.25rem}.display-card{transform:rotate(-1deg)}.float-pill{font-size:10px;padding:12px;right:0}.panel h2{font-size:2.1rem}.footer-bottom{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.service{transition:none}.button:hover,.service:hover{transform:none}}
   .contact-form{display:grid;gap:17px;width:100%;max-width:520px}.contact-form label{display:block;color:#edf2f7;font-size:14px;font-weight:700;margin-bottom:6px}.contact-form input,.contact-form textarea{display:block;width:100%;min-width:0;border:1px solid #8593a8;border-radius:8px;background:#fff;color:#0b152b;padding:12px 14px;font:inherit;font-size:16px}.contact-form textarea{resize:vertical}.contact-form input:focus-visible,.contact-form textarea:focus-visible{outline:3px solid #c7f26c;outline-offset:3px}.contact-form .form-note{font-size:12px;color:#c1ccda;line-height:1.6;margin:0}.form-note a{text-decoration:underline}.form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.contact-form .button{justify-self:start}.contact-form .contact-hint{max-width:none}.contact-grid{align-items:start}@media(max-width:760px){.contact-form{max-width:none;margin-top:20px}}
+    .hero-choice-bar{display:flex;width:100%;max-width:570px;background:var(--navy);border-radius:10px;overflow:hidden}.hero-choice-bar a{flex:1;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:19px 20px;color:#fff;font-size:14px;font-weight:750;line-height:1.4}.hero-choice-bar a+a{border-left:1px solid #516078}.hero-choice-bar a:hover{background:#24344f}.hero-choice-bar a span{color:var(--green);font-size:20px}.sample-assignments{padding:54px 0 62px;background:#fff;border-bottom:1px solid var(--line)}.assignments-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}.assignments-heading h2{font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-.045em;line-height:1.15;margin:12px 0 0}.assignments-heading p{font-size:13px;max-width:290px;color:var(--muted);margin:0}.assignment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.assignment-card{padding:26px;border:1px solid var(--line);border-radius:16px;background:var(--cream)}.assignment-label{font-size:11px;letter-spacing:.05em;text-transform:uppercase;font-weight:800;color:#526733}.assignment-card h3{font-size:20px;line-height:1.25;margin:16px 0 12px;letter-spacing:-.025em}.assignment-card p{font-size:14px;color:var(--muted);margin:0 0 24px}.assignment-meta{display:grid;gap:4px;border-top:1px solid #dbe1d8;padding-top:16px;font-size:12px;color:#46536a;font-weight:650}@media(max-width:760px){.assignment-grid{grid-template-columns:1fr}.assignments-heading{align-items:start;flex-direction:column;gap:16px}.assignments-heading p{max-width:none}.sample-assignments{padding:40px 0}.hero-choice-bar a{padding:16px 12px;font-size:13px}}
   </style>
 </head>
 <body>
@@ -51,13 +52,12 @@
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">Welkom bij VYN1 · uitgesproken als Vin One</span>
           <h1 id="hero-title">De juiste mensen.<br><em>Meer vooruitgang.</em></h1>
           <p class="hero-desc">Wij verbinden organisaties met professionals die direct waarde toevoegen. Flexibele expertise, heldere afspraken en aandacht voor de match.</p>
-          <div class="hero-actions">
-            <a href="#opdrachtgevers" class="button button-dark">Ik zoek expertise <span class="arrow" aria-hidden="true">↗</span></a>
-            <a href="#professionals" class="button button-outline">Ik ben professional <span class="arrow" aria-hidden="true">↗</span></a>
-          </div>
+          <nav class="hero-choice-bar" aria-label="Waar kunnen we u mee helpen?">
+            <a href="#opdrachtgevers">Ik zoek expertise <span aria-hidden="true">↗</span></a>
+            <a href="#professionals">Ik ben professional <span aria-hidden="true">↗</span></a>
+          </nav>
           <p class="hero-note"><strong>Finance · IT · HR · Legal · Projecten · Business Support</strong></p>
         </div>
         <div class="hero-art" aria-label="VYN1: verbinden, versterken, vooruitbrengen">
@@ -67,6 +67,16 @@
             <div class="display-bottom"><span>VYN1 / INTERIM &amp; DETACHERING</span><strong>↗</strong></div>
           </div>
           <div class="float-pill">Eén sterke match <span>maakt het verschil.</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="sample-assignments" aria-labelledby="assignments-title">
+      <div class="container">
+        <div class="assignments-heading"><div><span class="eyebrow">Een indruk van de mogelijkheden</span><h2 id="assignments-title">Opdrachten bij VYN1</h2></div><p>Fictieve voorbeelden ter illustratie. Deze opdrachten staan niet open.</p></div>
+        <div class="assignment-grid">
+          <article class="assignment-card"><span class="assignment-label">Voorbeeld · Finance</span><h3>Interim Business Controller</h3><p>Breng inzicht in financiële prestaties en adviseer over begroting en rapportage.</p><div class="assignment-meta"><span>Utrecht · hybride</span><span>32–36 uur · 6 maanden</span></div></article>
+          <article class="assignment-card"><span class="assignment-label">Voorbeeld · IT &amp; Digital</span><h3>Projectleider digitale transformatie</h3><p>Begeleid de invoering van een nieuw informatiesysteem en verbind gebruikers en techniek.</p><div class="assignment-meta"><span>Amsterdam · hybride</span><span>32–40 uur · 9 maanden</span></div></article>
+          <article class="assignment-card"><span class="assignment-label">Voorbeeld · HR &amp; People</span><h3>Interim HR-adviseur</h3><p>Ondersteun leidinggevenden bij personeelsvraagstukken en de ontwikkeling van hun teams.</p><div class="assignment-meta"><span>Rotterdam · hybride</span><span>24–32 uur · 4 maanden</span></div></article>
         </div>
       </div>
     </section>
