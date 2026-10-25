@@ -28,6 +28,7 @@
     @media(max-width:760px){.container{padding-left:20px;padding-right:20px}.section{padding:76px 0}.announcement{font-size:11px}.site-header .nav{min-height:70px}.menu-toggle{display:block;margin-left:auto}.nav .header-cta{display:none}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:white;padding:15px 20px 24px;border-bottom:1px solid var(--line);box-shadow:0 13px 20px rgba(11,21,43,.08)}.nav-links.open{display:flex;flex-direction:column;align-items:stretch;gap:0}.nav-links a{font-size:15px;padding:11px 0}.hero-grid{grid-template-columns:1fr;padding-top:61px;padding-bottom:65px;gap:42px}.hero h1{max-width:550px}.hero-art{min-height:320px;max-width:520px;width:100%;margin:auto}.hero-art::before{right:-40px}.display-card{min-height:300px;padding:26px}.display-card h2{margin:40px 0 25px;font-size:2.6rem}.float-pill{bottom:-8px;right:4px}.ticker-row{justify-content:flex-start;gap:10px 19px}.ticker-row span{width:100%}.split,.about,.contact-grid{grid-template-columns:1fr}.panel{min-height:initial;padding:40px 33px}.steps{grid-template-columns:1fr;gap:30px}.step{padding-top:21px}.about{gap:30px}.about-visual{min-height:310px}.contact-actions{margin-top:20px}.footer-main{flex-direction:column}.footer-links{padding-top:0}}
     @media(max-width:520px){.hero h1{font-size:3.3rem}.hero-desc{font-size:1.04rem}.hero-actions{flex-direction:column;align-items:stretch}.service-grid{grid-template-columns:1fr}.service{min-height:initial;padding:26px}.service-icon{margin-bottom:18px}.display-card h2{font-size:2.25rem}.display-card{transform:rotate(-1deg)}.float-pill{font-size:10px;padding:12px;right:0}.panel h2{font-size:2.1rem}.footer-bottom{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.service{transition:none}.button:hover,.service:hover{transform:none}}
+  .contact-form{display:grid;gap:17px;width:100%;max-width:520px}.contact-form label{display:block;color:#edf2f7;font-size:14px;font-weight:700;margin-bottom:6px}.contact-form input,.contact-form textarea{display:block;width:100%;min-width:0;border:1px solid #8593a8;border-radius:8px;background:#fff;color:#0b152b;padding:12px 14px;font:inherit;font-size:16px}.contact-form textarea{resize:vertical}.contact-form input:focus-visible,.contact-form textarea:focus-visible{outline:3px solid #c7f26c;outline-offset:3px}.contact-form .form-note{font-size:12px;color:#c1ccda;line-height:1.6;margin:0}.form-note a{text-decoration:underline}.form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.contact-form .button{justify-self:start}.contact-form .contact-hint{max-width:none}.contact-grid{align-items:start}@media(max-width:760px){.contact-form{max-width:none;margin-top:20px}}
   </style>
 </head>
 <body>
@@ -120,7 +121,19 @@
     <section class="section contact-band" id="contact" aria-labelledby="contact-title">
       <div class="container contact-grid">
         <div><span class="eyebrow">Samen aan de slag</span><h2 id="contact-title">Een vraag of een ambitie?<br>Maak de verbinding.</h2><p>Voor organisaties die expertise zoeken en professionals die hun volgende stap overwegen.</p></div>
-        <div class="contact-actions"><a href="mailto:info@vyn1.com?subject=Contact%20via%20VYN1.com" class="button button-bright">Stuur een e-mail <span class="arrow" aria-hidden="true">↗</span></a><span class="contact-hint">E-mail: <a href="mailto:info@vyn1.com">info@vyn1.com</a><br>Neem contact op over een opdracht of een volgende stap.</span></div>
+        <form class="contact-form" action="https://formsubmit.co/vin16d@icloud.com" method="POST">
+          <input type="hidden" name="_subject" value="Nieuw contactbericht via VYN1.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" value="https://vyn1.com/#contact">
+          <div class="form-trap" aria-hidden="true"><label>Laat dit veld leeg<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <div><label for="contact-name">Naam *</label><input id="contact-name" name="name" autocomplete="name" maxlength="120" required></div>
+          <div><label for="contact-email">E-mailadres *</label><input id="contact-email" type="email" name="email" autocomplete="email" maxlength="254" required></div>
+          <div><label for="contact-company">Organisatie</label><input id="contact-company" name="company" autocomplete="organization" maxlength="160"></div>
+          <div><label for="contact-message">Uw bericht *</label><textarea id="contact-message" name="message" rows="5" minlength="10" maxlength="5000" required></textarea></div>
+          <p class="form-note">Uw gegevens worden via <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a> per e-mail aan VYN1 gestuurd om uw vraag te beantwoorden. Vermeld geen gevoelige informatie.</p>
+          <button type="submit" class="button button-bright">Verstuur bericht <span class="arrow" aria-hidden="true">↗</span></button>
+          <span class="contact-hint">Na verzenden volgt een spamcontrole en bevestiging. Liever direct mailen? <a href="mailto:vin16d@icloud.com">Stuur een e-mail</a>.</span>
+        </form>
       </div>
     </section>
   </main>
