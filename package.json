@@ -1,0 +1,11 @@
+{
+  "name": "vyn1-website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "tailwindcss -c design/index.tailwind.cjs -i design/input.css -o assets/stitch-home.css --minify && tailwindcss -c design/boekhouding.tailwind.cjs -i design/input.css -o assets/stitch-bookkeeping.css --minify && tailwindcss -c design/webdesign.tailwind.cjs -i design/input.css -o assets/stitch-webdesign.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

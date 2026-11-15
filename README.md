@@ -1,22 +1,19 @@
-# VYN1 Interim & Detachering
+# VYN1 — Detachering, Boekhouding & Webdesign
 
-Vernieuwde statische website voor VYN1, met behoud van het bestaande domein vyn1.com en GitHub Pages-publicatie vanaf main / (root).
+Deze website gebruikt de laatst aangeleverde versie `stitch_vyn1_detachering-4.zip` van 15 november 2026. De homepage, boekhoudpagina en webdesignpagina zijn rechtstreeks uit de drie HTML-ontwerpen overgenomen.
 
-## Paginas
+- Drie divisies: Interim & Detachering, Boekhouding & Administratie, Webdesign & Digital.
+- Boekhouding: vijftien diensten met zoekfunctie en categoriefilters; startersaanbod €1.124,25 excl. btw, met de opgegeven jaar-/urenvoorwaarden.
+- Webdesign: pakketten van €495, €995 en vanaf €1.850 excl. btw; onderhoud en SEO €79 per maand, volgens het aangeleverde ontwerp.
+- Beide formulieren gebruiken de bestaande FormSubmit-contactbestemming; de export-demo die zonder verzending een succesmelding toonde is verwijderd.
+- Pakketkeuze, onderhoudstab, dienstfilter, calculator en navigatie werken lokaal in de browser.
 
-- Homepage: twee routes voor opdrachtgevers en professionals.
-- Diensten: interim en detachering, vier vakgebieden en werkwijze.
-- Opdrachten: doorzoekbare voorbeeldprofielen, expliciet geen actuele vacatures.
-- Over ons: aanpak en principes, zonder verzonnen klanten, reviews of resultaten.
-- Contact: bestaand FormSubmit-formulier en direct e-mailadres.
-- Privacy: feitelijke toelichting op contactverzoeken.
+## Publicatie en kosten
 
-Geen build, framework, betaalde database of API-sleutel nodig. Foto's zijn illustratief en stellen geen echte medewerkers voor. Gedeelde vormgeving en browserinteractie staan in assets/site.css en assets/site.js.
+GitHub Pages publiceert vanaf main / (root); CNAME blijft vyn1.com. Geen betaalde database, API-sleutel of runtime-framework nodig. De Tailwind-stijlen zijn vooraf gebouwd en opgenomen in assets/. Voor het opnieuw bouwen: `npm ci` en `npm run build:css`. Tailwind is vastgezet op 3.4.17. Lettertype en SVG-iconen staan lokaal met de bijbehorende licenties.
+
+De nieuwe Google-afbeeldingslinks in de export leveren een inlogpagina of 403 op. Daarom worden het bestaande aangeleverde VYN1-logo en de bestaande illustratieve werkomgevingsfoto gebruikt. Ontwerptelefoonnummers en WhatsApp-links zijn vervangen door het bestaande contactadres en de contactpagina. Onbevestigde verificatie-, prestatie- en DBA-garanties zijn vervangen door beschrijvingen zonder garanties.
 
 ## Contact
 
-De bestaande FormSubmit-bestemming is behouden. Het bijbehorende contactadres is vin16d@icloud.com. Ontvangst van berichten vereist een geactiveerde FormSubmit-ontvanger en is niet met een proefbericht bevestigd. De website presenteert doorgaan naar de spamcontrole niet als een verzonden bericht.
-
-## Publicatie
-
-Behoud CNAME en .nojekyll. GitHub Pages publiceert wijzigingen vanaf main / (root). Domein en TLS worden afzonderlijk van de build gecontroleerd.
+De bestaande FormSubmit-ontvanger en het adres vin16d@icloud.com zijn behouden. Ontvangst vereist een geactiveerde FormSubmit-ontvanger; er is tijdens de controle geen bericht verstuurd. De website toont geen ongeverifieerde verzendbevestiging.
