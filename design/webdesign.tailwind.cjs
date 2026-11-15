@@ -70,64 +70,40 @@ module.exports = {
       },
       "fontFamily": {
         "label-lg": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "body-lg": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "headline-lg": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "headline-sm": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "display-mobile": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "subtitle-tracked": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "headline-lg-mobile": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "headline-md": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "label-md": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "display": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "body-sm": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ],
         "body-md": [
-          "Plus Jakarta Sans",
-          "Arial",
-          "sans-serif"
+          "Plus Jakarta Sans"
         ]
       },
       "fontSize": {
